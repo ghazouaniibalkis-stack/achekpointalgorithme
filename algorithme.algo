@@ -1,0 +1,38 @@
+algorithme analyse_de _phrase
+var 
+ch=chaîne
+ch="bounjour tout le monde"
+nb_mot=entier
+nb_vowels=entier
+début
+écrire(long(ch)) 
+
+nb_mot=1
+espace=" "
+pour i de 0 a (long(ch)-1) faire 
+    si (ch[i]==espace)alors
+        nb_mot:=nb_mot+1
+    
+    fin_si
+fin_pour
+écrire("nombre de mot est", nb_mot) ;
+    
+    nb_vowels=0
+pour j de 0 a (long(ch)-1) faire 
+    si (ch[j]=="e"ou ch[j]=="y"ou ch[j]=="a"ou ch[j]=="o"ou ch[j]=="u" )alors
+        nb_vowels:=nb_vowels+1
+    fin_si
+fin_pour 
+         écrire("nombre de vowels est", nb_vowels) ;
+k=0
+répéter
+
+     si (ch[k]==espace)alors
+        nb_mot:=nb_mot+1
+    
+    fin_si
+    k++
+jusqu'à (nb_mot==".")
+écrire("le nombre de mot est"ch[i])
+fin
+
